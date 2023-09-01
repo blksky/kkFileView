@@ -16,7 +16,7 @@
     <#assign finalUrl="${baseUrl}${currentUrl}">
 </#if>
 <body>
-<iframe src="" width="100%" frameborder="0"></iframe>
+<iframe src="" width="100%" height="100%" frameborder="0"></iframe>
 </body>
 <script type="text/javascript">
     var url = '${finalUrl}';
@@ -25,15 +25,7 @@
          url = baseUrl + 'getCorsFile?urlPath=' + encodeURIComponent(Base64.encode(url));
     }
     document.getElementsByTagName('iframe')[0].src =  "${baseUrl}eml/index.html?file="+encodeURIComponent(url);
-    document.getElementsByTagName('iframe')[0].height = document.documentElement.clientHeight - 10;
-    /**
-     * 页面变化调整高度
-     */
-    window.onresize = function () {
-        var fm = document.getElementsByTagName("iframe")[0];
-        fm.height = window.document.documentElement.clientHeight - 10;
-    }
-	
+
   		 /*初始化水印*/
  if (!!window.ActiveXObject || "ActiveXObject" in window)
 {

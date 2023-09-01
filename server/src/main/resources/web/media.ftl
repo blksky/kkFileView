@@ -11,14 +11,28 @@
             background-color: #404040;
         }
 
-        .m {
-            width: 1024px;
-            margin: 0 auto;
+        /*.m {*/
+        /*    width: 1024px;*/
+        /*    margin: 0 auto;*/
+        /*}*/
+        .videoContent {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+        .videoContent video {
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+        }
+        .plyr {
+            width: 100%;
         }
     </style>
 </head>
 <body>
-<div class="m">
+<div class="videoContent">
     <video>
         <source src="${mediaUrl}"/>
     </video>

@@ -37,7 +37,6 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="https://kkview.cn" target='_blank'>kkFileView</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
@@ -54,7 +53,6 @@
     <#--  接入说明  -->
     <div class="page-header">
         <h1>接入说明</h1>
-        本文档针对前端项目接入 kkFileView 的说明，并假设 kkFileView 的服务地址为：http://127.0.0.1:8012。
     </div>
     <div class="well">
 

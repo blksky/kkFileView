@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0"/>
-    <title>kkFileView版本记录</title>
+    <title>版本记录</title>
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/viewer.min.css"/>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
@@ -58,12 +58,12 @@
                 4. 配置文件新增启用 GZIP压缩 <br>
                 5. CAD格式新增支持 转换成svg tif 格式 <br>
                 6. CAD 转换新增 超时结束 新增线程管理 <br>
-                7. 删除功能 新增验证码方法 <br> 
-                8. 升级 CAD转换组件 <br> 
-                9. office 功能调整 支持批注 转换页码限制 生成水印等等 <br> 
-                10.新增xbrl格式 <br> 
-                11.修复PDF解密加密文件 转换成功后台报错问题  <br> 
-                12.支持 301重定向 及文件名被编码 <br> 
+                7. 删除功能 新增验证码方法 <br>
+                8. 升级 CAD转换组件 <br>
+                9. office 功能调整 支持批注 转换页码限制 生成水印等等 <br>
+                10.新增xbrl格式 <br>
+                11.修复PDF解密加密文件 转换成功后台报错问题  <br>
+                12.支持 301重定向 及文件名被编码 <br>
                 13.其他功能优化及已知问题修复 <br>
             </div>
         </div>
@@ -350,12 +350,6 @@
     <div class="panel panel-success">
         <div class="panel-heading">
             <h3 class="panel-title">2017年12月12日</h3>
-        </div>
-        <div class="panel-body">
-            <div>
-                1. 项目gitee开源:<a href="https://gitee.com/kekingcn/file-online-preview" target="_blank">https://gitee.com/kekingcn/file-online-preview</a><br>
-                2. 项目github开源:<a href="https://github.com/kekingcn/kkFileView" target="_blank">https://github.com/kekingcn/kkFileView</a>
-            </div>
         </div>
     </div>
 </div>

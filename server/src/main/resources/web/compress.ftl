@@ -16,23 +16,17 @@
         a {color:#3C6E31;text-decoration: underline;}
         a:hover {background-color:#3C6E31;color:white;}
         code {color: #2f332a;}
-       div.zTreeDemoBackground {
-           max-width: 880px;
-           text-align:center;
-            margin:0 auto;
-            border-radius:3px;
+        div.zTreeDemoBackground {
+            text-align:center;
             box-shadow:rgba(0,0,0,0.15) 0 0 8px;
             background:#FBFBFB;
-            border:1px solid #ddd;
-            margin:1px auto;
             padding:5px;
-       }
-       
+        }
+
     </style>
 </head>
 <body>
 <div class="zTreeDemoBackground left">
-<h1>kkFileView</h1>
     <ul id="treeDemo" class="ztree"></ul>
 </div>
 <script>

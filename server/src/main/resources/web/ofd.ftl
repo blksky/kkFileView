@@ -14,7 +14,7 @@
 <#else>
     <#assign finalUrl="${baseUrl}${currentUrl}">
 </#if>
-<iframe src="" width="100%" frameborder="0"></iframe>
+<iframe src="" width="100%" height="100%" frameborder="0"></iframe>
 </body>
 <script type="text/javascript">
     var url = '${finalUrl}';
@@ -26,14 +26,6 @@
    	document.getElementsByTagName('iframe')[0].src = "${baseUrl}ofd/index.html?file=" + encodeURIComponent(url)+"&scale=width";
     }else{
     document.getElementsByTagName('iframe')[0].src = "${baseUrl}ofd/index.html?file="+ encodeURIComponent(url)+"";
-    }
-    document.getElementsByTagName('iframe')[0].height = document.documentElement.clientHeight - 10;
-    /**
-     * 页面变化调整高度
-     */
-    window.onresize = function () {
-        var fm = document.getElementsByTagName("iframe")[0];
-        fm.height = window.document.documentElement.clientHeight - 10;
     }
 
  function IsPhone() {

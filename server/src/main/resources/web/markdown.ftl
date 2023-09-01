@@ -14,26 +14,8 @@
 <body>
 <input hidden id="textData" value="${textData}"/>
 
-<div class="container">
-    <div class="panel panel-default">
-        <div id="markdown_btn" class="panel-heading">
-            <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                    ${file.name}
-                </a>
-            </h4>
-        </div>
-        <div id="text_btn" class="panel-heading">
-            <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                    ${file.name}
-                </a>
-            </h4>
-        </div>
-        <div class="panel-body">
-            <div id="markdown"></div>
-        </div>
-    </div>
+<div class="view_container">
+    <div id="markdown"></div>
 </div>
 
 <script>

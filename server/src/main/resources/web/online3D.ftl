@@ -7,7 +7,7 @@
     <title>${file.name}3D预览</title>
 	  <script src="js/base64.min.js" type="text/javascript"></script>
     <#include "*/commonHeader.ftl">
-	
+
 </head>
 	<#if currentUrl?contains("http://") || currentUrl?contains("https://") || currentUrl?contains("file://")>
     <#assign finalUrl="${currentUrl}">
@@ -17,7 +17,7 @@
     <#assign finalUrl="${baseUrl}${currentUrl}">
 </#if>
 <body>
-<iframe src="" width="100%" frameborder="0"></iframe>
+<iframe src="" width="100%" height="100%" frameborder="0"></iframe>
 </body>
 <script type="text/javascript">
     var url = '${finalUrl}';
@@ -28,15 +28,6 @@
     }else{
 	document.getElementsByTagName('iframe')[0].src = "${baseUrl}website/index.html#model="+ url;
 	}
-	
-    document.getElementsByTagName('iframe')[0].height = document.documentElement.clientHeight - 10;
-    /**
-     * 页面变化调整高度
-     */
-    window.onresize = function () {
-        var fm = document.getElementsByTagName("iframe")[0];
-        fm.height = window.document.documentElement.clientHeight - 10;
-    }
 </script>
 
   <script type="text/javascript">

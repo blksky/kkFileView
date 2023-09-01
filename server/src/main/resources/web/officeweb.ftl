@@ -60,11 +60,11 @@
 <body>
 <div id="lucky-mask-demo" style="position: absolute;z-index: 1000000;left: 0px;top: 0px;bottom: 0px;right: 0px; background: rgba(255, 255, 255, 0.8); text-align: center;font-size: 40px;align-items:center;justify-content: center;display: none;">加载中</div>
 <p style="text-align:center;">
-<div id="button-area">
+<div id="button-area" style="display: none">
     <label><button onclick="tiaozhuan()">跳转HTML预览</button></label>
     <button id="confirm-button" onclick="print()">打印</button>
 </div>
-<div id="luckysheet" style="margin:0px;padding:0px;position:absolute;width:100%;left: 0px;top: 20px;bottom: 0px;outline: none;"></div>
+<div id="luckysheet" style="margin:0px;padding:0px;position:absolute;width:100%;left: 0px;top: 0px;bottom: 0px;outline: none;"></div>
 
 <script src="xlsx/luckyexcel.umd.js"></script>
 <script>
@@ -98,27 +98,27 @@
             window.luckysheet.create({
                 container: 'luckysheet', //luckysheet is the container id
                 lang: "zh",
-                showtoolbarConfig:{
-                    image: true,
-                    print: false, //关闭打印按钮  启用也不能用 等以后看情况而定
-                    exportXlsx: false, //关闭导出按钮  启用也不能用  等以后看情况而定
-                },
+                // showtoolbarConfig:{
+                //     image: true,
+                //     print: false, //关闭打印按钮  启用也不能用 等以后看情况而定
+                //     exportXlsx: false, //关闭导出按钮  启用也不能用  等以后看情况而定
+                // },
 
                 allowCopy: true, // 是否允许拷贝
-                showtoolbar: true, // 是否显示工具栏
+                showtoolbar: false, // 是否显示工具栏
                 showinfobar: false, // 是否显示顶部信息栏
                 // myFolderUrl: "/",//作用：左上角<返回按钮的链接
                 showsheetbar: true, // 是否显示底部sheet页按钮
-                showstatisticBar: true, // 是否显示底部计数栏
-                sheetBottomConfig: true, // sheet页下方的添加行按钮和回到顶部按钮配置
-                allowEdit: true, // 是否允许前台编辑
+                showstatisticBar: false, // 是否显示底部计数栏
+                sheetBottomConfig: false, // sheet页下方的添加行按钮和回到顶部按钮配置
+                allowEdit: false, // 是否允许前台编辑
                 enableAddRow: false, // 允许增加行
                 enableAddCol: false, // 允许增加列
                 userInfo: false, // 右上角的用户信息展示样式
                 showRowBar: true, // 是否显示行号区域
                 showColumnBar: false, // 是否显示列号区域
                 sheetFormulaBar: false, // 是否显示公式栏
-                enableAddBackTop: true,//返回头部按钮
+                enableAddBackTop: false,//返回头部按钮
                 forceCalculation: false, //下面是导出插件 默认关闭
                 enableAddRow: false, // 允许增加行
                 plugins: [{ name: 'chart' }, { name: 'exportXlsx', config: { url: 'luckyToXlsx' } }, {

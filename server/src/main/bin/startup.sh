@@ -9,7 +9,12 @@
 # Description:  v1.1：修改进程启动机制为pid形式。
 #############################
 #
-DIR_HOME=("/opt/openoffice.org3" "/opt/libreoffice" "/opt/libreoffice6.1" "/opt/libreoffice7.0" "/opt/libreoffice7.1" "/opt/libreoffice7.2" "/opt/libreoffice7.3" "/opt/libreoffice7.4" "/opt/openoffice4" "/usr/lib/openoffice" "/usr/lib/libreoffice")
+
+#export JAVA_HOME=/export/soft/graph-frontend/byd-poc/jdk1.8.0_371
+#export PATH="$JAVA_HOME/bin:$PATH"
+#export CLASSPATH=.:\${JAVA_HOME}/lib/dt.jar:\${JAVA_HOME}/lib/tools.jar
+
+DIR_HOME=("/opt/openoffice.org3" "/opt/libreoffice" "/opt/libreoffice7.6" "/opt/openoffice4" "/usr/lib/openoffice" "/usr/lib/libreoffice")
 FLAG=
 OFFICE_HOME=
 KKFILEVIEW_BIN_FOLDER=$(cd "$(dirname "$0")" || exit 1 ;pwd)

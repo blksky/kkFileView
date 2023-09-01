@@ -38,5 +38,26 @@
     html, body {
         height: 100%;
         width: 100%;
+        overflow: hidden;
+    }
+
+    .view_container {
+        padding: 0;
+        height: 100%;
+        overflow: auto;
+    }
+
+    .view_container #divContent ,.view_container .divContent {
+        min-height: 100%;
+        color: #fff;
+        font-size: 12px;
+        line-height: 20px;
+        padding: 10px;
+        white-space: pre-wrap; /*css-3*/
+        white-space: -moz-pre-wrap; /*Mozilla,since1999*/
+        white-space: -pre-wrap; /*Opera4-6*/
+        white-space: -o-pre-wrap; /*Opera7*/
+        word-wrap: break-word; /*InternetExplorer5.5+*/
+        background-color: #000;
     }
 </style>

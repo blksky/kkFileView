@@ -18,12 +18,28 @@
   --highlight-selected-bg-color: rgba(0, 100, 0, 1);
 }
 
+.pdfSidebarNotification::after {
+  /*position: absolute;*/
+  /*display: inline-block;*/
+  /*top: 2px;*/
+  /*inset-inline-end: 2px;*/
+  /* Create a filled circle, with a diameter of 9 pixels, using only CSS: */
+  /*content: "";*/
+  background-color: transparent !important;
+  display: none !important;
+  /*height: 9px;*/
+  /*width: 9px;*/
+  /*border-radius: 50%;*/
+}
+
 @media screen and (forced-colors: active) {
   :root {
     --highlight-bg-color: Highlight;
     --highlight-selected-bg-color: ButtonText;
   }
 }
+
+#pageNumber {font-size: 14px;}
 
 .textLayer {
   position: absolute;
@@ -406,7 +422,7 @@
   outline: 1.5px solid rgb(255, 255, 74);
   padding: calc(6px * var(--scale-factor));
   cursor: pointer;
-  font: message-box;
+  /*font: message-box;*/
   white-space: normal;
   word-wrap: break-word;
   pointer-events: auto;
@@ -1521,7 +1537,7 @@ body {
   width: var(--sidebar-width);
   visibility: hidden;
   z-index: 100;
-  font: message-box;
+  /*font: message-box;*/
   border-top: 1px solid rgba(51, 51, 51, 1);
   border-inline-end: var(--doorhanger-border-color-whcm);
   transition-property: inset-inline-start;
@@ -1572,14 +1588,14 @@ body {
   inset-inline: 0;
   z-index: 9999;
   cursor: default;
-  font: message-box;
+  /*font: message-box;*/
 }
 
 :is(.toolbar, .editorParamsToolbar, .findbar, #sidebarContainer)
   :is(input, button, select),
 .secondaryToolbar :is(input, button, a, select) {
   outline: none;
-  font: message-box;
+  /*font: message-box;*/
 }
 
 #toolbarContainer {
@@ -1699,7 +1715,7 @@ body {
   height: auto;
   padding: 0 4px;
   margin: 4px 2px;
-  font: message-box;
+  /*font: message-box;*/
   font-size: 12px;
   line-height: 14px;
   text-align: left;
@@ -2240,16 +2256,17 @@ a:is(.toolbarButton, .secondaryToolbarButton)[href="#"] {
 }
 
 .pdfSidebarNotification::after {
-  position: absolute;
-  display: inline-block;
-  top: 2px;
-  inset-inline-end: 2px;
+  /*position: absolute;*/
+  /*display: inline-block;*/
+  /*top: 2px;*/
+  /*inset-inline-end: 2px;*/
   /* Create a filled circle, with a diameter of 9 pixels, using only CSS: */
-  content: "";
-  background-color: rgba(112, 219, 85, 1);
-  height: 9px;
-  width: 9px;
-  border-radius: 50%;
+  /*content: "";*/
+  background-color: transparent !important;
+  display: none !important;
+  /*height: 9px;*/
+  /*width: 9px;*/
+  /*border-radius: 50%;*/
 }
 
 .secondaryToolbarButton {
@@ -2576,7 +2593,7 @@ dialog {
   padding: 15px;
   border-spacing: 4px;
   color: var(--main-color);
-  font: message-box;
+  /*font: message-box;*/
   font-size: 12px;
   line-height: 14px;
   background-color: var(--doorhanger-bg-color);

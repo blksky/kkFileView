@@ -29,27 +29,14 @@ background-color:#000000
     </style>
 
 
-	<div class="container">
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                    ${file.name}
-                </a>
-            </h4>
-        </div>
-        <div class="panel-body">
-          <div id="divPagenation" class="black" >
-
+    <div class="view_container">
+        <div id="divPagenation" class="black" ></div>
+        <div id="divContent"></div>
     </div>
-        <div id="divContent" class="panel-body">
-           </div>
-        </div>
-    </div>
-</div>
 
 
- <script type="text/javascript">
+
+    <script type="text/javascript">
         var base64data = $("#textData").val()
         var s = Base64.decode(base64data);
 	  // s=s.replace(/。/g,"。<br>");
@@ -324,19 +311,8 @@ background-color:#000000
 
  <#else/>
 
-<div class="container">
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                    ${file.name}
-                </a>
-            </h4>
-        </div>
-        <div class="panel-body">
-            <div id="text"></div>
-        </div>
-    </div>
+<div class="view_container">
+    <div id="text"></div>
 </div>
 
 <script>
