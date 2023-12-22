@@ -347,6 +347,7 @@
                 <artifactId>maven-assembly-plugin</artifactId>
                 <version>3.4.2</version>
                 <configuration>
+                    <tarLongFileMode>posix</tarLongFileMode>
                     <appendAssemblyId>false</appendAssemblyId>
                     <descriptors>
                         <descriptor>src/main/assembly/dist-win32.xml</descriptor>
