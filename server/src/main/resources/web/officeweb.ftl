@@ -54,8 +54,8 @@
     html, body {
         height: 100%;
         width: 100%;
+        overflow: hidden;
     }
-
 </style>
 <body>
 <div id="lucky-mask-demo" style="position: absolute;z-index: 1000000;left: 0px;top: 0px;bottom: 0px;right: 0px; background: rgba(255, 255, 255, 0.8); text-align: center;font-size: 40px;align-items:center;justify-content: center;display: none;">加载中</div>

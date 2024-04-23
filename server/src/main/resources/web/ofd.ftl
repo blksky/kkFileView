@@ -27,13 +27,13 @@
     }else{
     document.getElementsByTagName('iframe')[0].src = "${baseUrl}ofd/index.html?file="+ encodeURIComponent(url)+"";
     }
-    document.getElementsByTagName('iframe')[0].height = document.documentElement.clientHeight - 10;
+    document.getElementsByTagName('iframe')[0].height = document.documentElement.clientHeight;
     /**
      * 页面变化调整高度
      */
     window.onresize = function () {
         var fm = document.getElementsByTagName("iframe")[0];
-        fm.height = window.document.documentElement.clientHeight - 10;
+        fm.height = window.document.documentElement.clientHeight;
     }
 
  function IsPhone() {

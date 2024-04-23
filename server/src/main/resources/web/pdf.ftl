@@ -27,18 +27,18 @@
         url = baseUrl + 'getCorsFile?urlPath=' + encodeURIComponent(Base64.encode(url));
     }
     document.getElementsByTagName('iframe')[0].src = "${baseUrl}pdfjs/web/viewer.html?file=" + encodeURIComponent(url) + "&disablepresentationmode=${pdfPresentationModeDisable}&disableopenfile=${pdfOpenFileDisable}&disableprint=${pdfPrintDisable}&disabledownload=${pdfDownloadDisable}&disablebookmark=${pdfBookmarkDisable}&disableediting=${pdfDisableEditing}";
-    document.getElementsByTagName('iframe')[0].height = document.documentElement.clientHeight - 10;
+    document.getElementsByTagName('iframe')[0].height = document.documentElement.clientHeight;
     /**
      * 页面变化调整高度
      */
     window.onresize = function () {
         var fm = document.getElementsByTagName("iframe")[0];
-        fm.height = window.document.documentElement.clientHeight - 10;
+        fm.height = window.document.documentElement.clientHeight;
     }
 
     function goForImage() {
         var url = window.location.href
-        
+
         if (url.indexOf("tifPreviewType=pdf") != -1) {
             url = url.replace("tifPreviewType=pdf", "tifPreviewType=jpg");
         } else {
